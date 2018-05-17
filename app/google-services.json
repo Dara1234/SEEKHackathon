@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "558739110132",
+    "firebase_url": "https://interviewingapp.firebaseio.com",
+    "project_id": "interviewingapp",
+    "storage_bucket": "interviewingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558739110132:android:313202f73ca89df9",
+        "android_client_info": {
+          "package_name": "com.example.ezequiel.camera2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558739110132-v0ei5o2dhgotnavpqud99il4l3m8bhmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [{ "current_key": "" }],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
