@@ -4,4 +4,10 @@
     <string name="switch_camera">SWITCH</string>
     <string name="record_video">VIDEO</string>
     <string name="stop_video">STOP</string>
+
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_candidate_list">CandidateListActivity</string>
 </resources>

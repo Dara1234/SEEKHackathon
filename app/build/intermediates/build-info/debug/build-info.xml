@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
-    ir-eligibility="FIELD_TYPE_CHANGE"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.1.2"
-    timestamp="1526534417069"
+    timestamp="1526613506635"
     token="-5500057727608376160"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="141" />
+        duration="397" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="61" />
     <task
         name="verifier"
-        duration="1" />
+        duration="15" />
 
     <artifact
         location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -30,10 +30,10 @@
 
     <build
         build-mode="FULL"
-        timestamp="1526533701423"
+        timestamp="1526612902737"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -45,7 +45,7 @@
             location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
@@ -54,10 +54,10 @@
             location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -74,8 +74,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="FIELD_TYPE_CHANGE"
-        timestamp="1526534417069"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1526613506635"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/dara/Downloads/Camera2Vision-master/Camera2/app/build/intermediates/split-apk/debug/slices/slice_8.apk"

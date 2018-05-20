@@ -167,7 +167,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     videoButton.setEnabled(true);
-                    videoButton.setText(getString(R.string.stop_video));
+                    //videoButton.setText(getString(R.string.stop_video));
+                    videoButton.setBackgroundResource(R.drawable.stopbtn);
                 }
             });
             Toast.makeText(context, "Video STARTED!", Toast.LENGTH_SHORT).show();
@@ -182,8 +183,9 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                     switchButton.setEnabled(true);
                     videoButton.setEnabled(true);
-                    videoButton.setText(getString(R.string.record_video));
-                    Intent myIntent = new Intent(MainActivity.this, CandidateProfileActivity.class);
+                    //videoButton.setText(getString(R.string.record_video));
+                    videoButton.setBackgroundResource(R.drawable.recordbtn);
+                    Intent myIntent = new Intent(MainActivity.this, CandidateListActivity.class);
                     startActivity(myIntent);
                 }
             });
@@ -199,8 +201,9 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                     switchButton.setEnabled(true);
                     videoButton.setEnabled(true);
-                    videoButton.setText(getString(R.string.record_video));
-                    Intent myIntent = new Intent(MainActivity.this, CandidateProfileActivity.class);
+                    //videoButton.setText(getString(R.string.record_video));
+                    videoButton.setBackgroundResource(R.drawable.recordbtn);
+                    Intent myIntent = new Intent(MainActivity.this, CandidateListActivity.class);
                     startActivity(myIntent);
                 }
             });
@@ -215,7 +218,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     videoButton.setEnabled(true);
-                    videoButton.setText(getString(R.string.stop_video));
+                    //videoButton.setText(getString(R.string.stop_video));
+                    videoButton.setBackgroundResource(R.drawable.stopbtn);
                 }
             });
             Toast.makeText(context, "Video STARTED!", Toast.LENGTH_SHORT).show();
@@ -230,8 +234,9 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                     switchButton.setEnabled(true);
                     videoButton.setEnabled(true);
-                    videoButton.setText(getString(R.string.record_video));
-                    Intent myIntent = new Intent(MainActivity.this, CandidateProfileActivity.class);
+                    //videoButton.setText(getString(R.string.record_video));
+                    videoButton.setBackgroundResource(R.drawable.recordbtn);
+                    Intent myIntent = new Intent(MainActivity.this, CandidateListActivity.class);
                     startActivity(myIntent);
                 }
             });
@@ -247,8 +252,9 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                     switchButton.setEnabled(true);
                     videoButton.setEnabled(true);
-                    videoButton.setText(getString(R.string.record_video));
-                    Intent myIntent = new Intent(MainActivity.this, CandidateProfileActivity.class);
+                    //videoButton.setText(getString(R.string.record_video));
+                    videoButton.setBackgroundResource(R.drawable.recordbtn);
+                    Intent myIntent = new Intent(MainActivity.this, CandidateListActivity.class);
                     startActivity(myIntent);
                 }
             });
@@ -550,16 +556,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if(wasActivityResumed)
-        	//If the CAMERA2 is paused then resumed, it won't start again unless creating the whole camera again.
-        	if(useCamera2) {
-        		if(usingFrontCamera) {
-        			createCameraSourceFront();
-        		} else {
-        			createCameraSourceBack();
-        		}
-        	} else {
-        		startCameraSource();
-        	}
+            //If the CAMERA2 is paused then resumed, it won't start again unless creating the whole camera again.
+            if(useCamera2) {
+                if(usingFrontCamera) {
+                    createCameraSourceFront();
+                } else {
+                    createCameraSourceBack();
+                }
+            } else {
+                startCameraSource();
+            }
     }
 
     @Override

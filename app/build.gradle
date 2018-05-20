@@ -64,10 +64,9 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     implementation group: 'cz.msebera.android', name: 'httpclient', version: '4.4.1.1'
     implementation 'com.microsoft.projectoxford:face:1.4.2'
-    implementation 'com.google.firebase:firebase-core:15.0.0'
-    implementation 'com.google.firebase:firebase-storage:15.0.0'
     implementation 'com.google.android.gms:play-services-vision:15.0.0'
-    implementation "com.google.firebase:firebase-auth:15.0.0"
+    implementation 'com.ibm.watson.developer_cloud:personality-insights:3.8.0'
+    implementation 'com.android.support:support-v4:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

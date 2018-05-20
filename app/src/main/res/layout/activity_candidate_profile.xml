@@ -5,180 +5,365 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CandidateProfileActivity">
-
     <VideoView
         android:id="@+id/videoView1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="304dp"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="419dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical">
+        android:layout_alignParentStart="true">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentTop="true">
+            android:layout_height="375dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/profilebackground"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Name"
-                android:textSize="20dp" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true">
 
-            <TextView
-                android:id="@+id/textView3"
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="DARA's employability Score"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView_totalscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:text="%%%"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="60dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="10dp"
-                android:text="%%%"
-                android:textAlignment="center"
-                android:textSize="20dp" />
+                android:layout_height="20dp"
+                android:layout_below="@id/linearLayout"
+                 />
 
+            <LinearLayout
+                android:id="@+id/honesty_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView1">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Honesty"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="187dp">
+                <TextView
+                    android:id="@+id/textView_honesty"
+                    android:layout_width="248dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="%%%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar_honesty"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/honesty_linearlayout"
+                android:layout_marginBottom="257dp"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Details"
-                android:textSize="20dp" />
+                android:paddingRight="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/positivty_lienarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/progressBar_honesty"
+                android:layout_marginTop="-257dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:text="Positivty"/>
+
+                <TextView
+                    android:id="@+id/textView_positivity"
+                    android:layout_width="248dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="%%%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"  />
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="157dp">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            <ProgressBar
+                android:id="@+id/progressBar_positivity"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/positivty_lienarlayout"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Positivity"
-                android:textSize="20dp" />
+                android:paddingRight="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/confidence_lienarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@+id/progressBar_positivity">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Confidence"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView_confidence"
+                    android:layout_width="248dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="%%%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="127dp">
+            <ProgressBar
+                android:id="@+id/confidence_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/confidence_lienarlayout"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Honesty"
-                android:textSize="20dp" />
+                android:paddingRight="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/openness_lienarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@id/confidence_progressbar"
+                android:layout_marginBottom="96dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Openness"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView_openness"
+                    android:layout_width="248dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="%%%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"  />
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="96dp">
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            <ProgressBar
+                android:id="@+id/openness_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/openness_lienarlayout"
+                android:layout_marginTop="-96dp"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Openess"
-                android:textSize="20dp" />
+                android:paddingRight="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/conscientiousness_lienarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@id/openness_progressbar"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="420dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:text="Conscientiousness"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView_conscientiousness"
+                        android:layout_width="248dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="%%%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"  />
+                </LinearLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="66dp">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            <ProgressBar
+                android:id="@+id/conscientiousness_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/conscientiousness_lienarlayout"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Conscientiousness"
-                android:textSize="20dp" />
+                android:paddingRight="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/extroversion_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@id/conscientiousness_progressbar"
+                android:layout_marginBottom="34dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Intro/Extroversion"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView_extroversion"
+                    android:layout_width="248dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="%%%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"  />
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="34dp">
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            <ProgressBar
+                android:id="@+id/extroversion_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/extroversion_linearlayout"
+                android:layout_marginTop="-34dp"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Intro/Extrovert"
-                android:textSize="20dp" />
+                android:paddingRight="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/agreebleness_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@id/extroversion_progressbar">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="420dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Agreebleness"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView_agreebleness"
+                    android:layout_width="248dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:text="%%%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentBottom="true">
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="248dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            <ProgressBar
+                android:id="@+id/agreebleness_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/agreebleness_linearlayout"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
-                android:text="Agreebleness"
-                android:textSize="20dp" />
-
-
-        </LinearLayout>
-    </RelativeLayout>
+                android:paddingRight="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/button_play"
@@ -186,13 +371,49 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="204dp"
-        android:text="Play" />
+        android:layout_marginTop="81dp"
+        android:background="@drawable/arrows" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/button_no"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/reject" />
+        <Button
+            android:id="@+id/button_kiv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/kiv" />
+        <Button
+            android:id="@+id/button_yes"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/accept" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="20dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="251dp"
-        android:layout_height="193dp"
+        android:layout_width="21dp"
+        android:layout_height="30dp"
         android:layout_alignParentBottom="true"
-       />
+        android:visibility="invisible" />
+
+
+
 </RelativeLayout>
